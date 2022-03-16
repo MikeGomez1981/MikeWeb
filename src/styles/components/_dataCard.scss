@@ -1,0 +1,53 @@
+.card{
+    width: 25%;
+    background-color: transparent;    
+    border-radius: 0%;
+    
+}
+.borde{
+    border-color:$secondary;  
+    
+}
+.card-img{
+    border-radius: 0%;
+    opacity: 80%;  
+}
+.card-text{
+    //text-shadow: 1px 0px 2px $secondary;
+    background-color: transparent;
+    white-space: nowrap;
+    position:absolute;
+    width: 100%;    
+}
+.row>*{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.informacion{
+    width: 100%;
+}
+.card-body{
+    padding: 0;
+}
+.linea {
+    color:$primary;
+    opacity: 0%;    
+    transition: opacity 1s;
+}
+.linea:hover{
+    background-color: $secondary;
+    opacity: 70%;
+    color: $primary;
+}
+.abajo{
+    color: $primary;
+    background-color: $secondary;
+    opacity: 70%;
+}
+p{
+    margin:0%;
+}
+
+
+
+
