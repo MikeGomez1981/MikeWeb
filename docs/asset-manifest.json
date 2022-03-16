@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bc77da83.css",
+    "main.js": "/static/js/main.46444b7a.js",
+    "static/media/1.png": "/static/media/1.cc20550aca20f5227011.png",
+    "static/media/niebla.png": "/static/media/niebla.316582cfea5d4e6605f9.png",
+    "static/media/libros.png": "/static/media/libros.2ec523fbec4f049ef3f4.png",
+    "static/media/2.png": "/static/media/2.7c9556808746fbeb890b.png",
+    "static/media/3.png": "/static/media/3.85367557ed0de773e671.png",
+    "static/media/bombilla_responsabilidad.png": "/static/media/bombilla_responsabilidad.bf78f4b7b81b322b04f0.png",
+    "static/media/tres.png": "/static/media/tres.9b9f7c2132718ea6e743.png",
+    "static/media/dos.png": "/static/media/dos.f15afe298e0fc2cc7f1f.png",
+    "static/media/siete.png": "/static/media/siete.b2cce36031b69fdba90d.png",
+    "static/media/diez.png": "/static/media/diez.fd250b8567f3d5c5b9ee.png",
+    "static/media/doce.png": "/static/media/doce.f0b846030290bad6e53f.png",
+    "static/media/nueve.png": "/static/media/nueve.850d46723ccdb3b48f95.png",
+    "static/media/ocho.png": "/static/media/ocho.d7575d382d0e42e8ab7b.png",
+    "static/media/once.png": "/static/media/once.11f6c486f26ff0444285.png",
+    "static/media/bio1.txt": "/static/media/bio1.f839c335e53c58071529.txt",
+    "index.html": "/index.html",
+    "static/media/bio2.txt": "/static/media/bio2.cd77dd0f3aeef58f2607.txt",
+    "static/media/bio.txt": "/static/media/bio.5247e5d9a413b7a2fcc0.txt",
+    "main.bc77da83.css.map": "/static/css/main.bc77da83.css.map",
+    "main.46444b7a.js.map": "/static/js/main.46444b7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc77da83.css",
+    "static/js/main.46444b7a.js"
+  ]
+}
