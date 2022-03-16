@@ -10,7 +10,7 @@ import { Navbar } from '../components/ui/Navbar';
 
 export const AppRouter = () => {
   return (
-    <BrowserRouter >
+    <BrowserRouter basename={process.env.PUBLIC_URL} >
         <Navbar />
             <div className="container">
                 <Routes>
