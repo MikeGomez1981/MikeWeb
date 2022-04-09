@@ -10,12 +10,12 @@ export const DataCard = ({
     version,
     puntuacion
 }) => {
-    
+    //whileTap={{ scale: 0.8 }}
   return (
-      <div className="card me-5 mb-5 mt-5">
-        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} className="borde" >
+      <div className="card me-5 mb-5 mt-5 animate__animated animate__jello">
+        <motion.div whileHover={{ scale: 1.1 }}  className="borde " >
             <img 
-                src={recursos(`./${id}.png`)}
+                src={recursos(`./${id}.webp`)}
                 alt={name} 
                 className="card-img   "               
             />

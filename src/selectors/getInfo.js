@@ -1,7 +1,6 @@
 
 import {data} from '../data/data';
 
-//import React from 'react';
 
 export const getInfo = (name = '') => {
 

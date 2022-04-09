@@ -18,15 +18,9 @@ const ButtonContainer= styled.div`
     justify-content: center;
     display: flex;
     margin-top: 5%;`;
-const CarouselButton= styled.button`
-    width: 40px;
-    height: 40px;
-    color: #212529;
-    background-color: #ECF0F1;
-    border: #212529;   
-    margin: 0 1%;
-    border-radius: 100%
-    `;
+
+
+  
 const autoplay= Boolean;
 
 export const Carousel = () => {;
@@ -56,6 +50,7 @@ export const Carousel = () => {;
             setSelectedIndex(nextIndex);
         }, 500);
     },[selectedIndex]);
+    
     useEffect(() => {
       if (autoplay ) {
           const interval = setInterval(()=>{
@@ -75,11 +70,11 @@ export const Carousel = () => {;
                 alt="imagen" 
                 onLoad={()=>setLoaded(true) }/>
             <ButtonContainer>
-                <CarouselButton onClick={previous}>{'<'}</CarouselButton>
-                <CarouselButton onClick={next}>{'>'}</CarouselButton>
+                <button className="CarouselButtonIzq" onClick={previous}>{'<'}</button>
+                <button className="CarouselButtonDer" onClick={next} >{'>'}</button>
             </ButtonContainer>    
 
         </>
   
   )
-}
+} 

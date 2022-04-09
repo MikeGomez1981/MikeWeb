@@ -28,21 +28,21 @@ export const Search = () => {
 
   const className = 'animate__animated animate__bounceOut ';
 
-  const [quitar, setquitar] = useState(false);
+  const [quitar, setQuitar] = useState(false);
   
-  const handleClose=()=>{    
-    setquitar(true);        
-  }
+  
+  const handleClose= ()=>{ setQuitar(true) }
   
   return (
-    <div className=" row row-cols-1 justify-content-center" 
+    
+    <div className=" row row-cols-1 justify-content-center animate__animated animate__fadeIn" 
       ref={constraintsRef} 
     >
       <motion.div 
         drag
         dragConstraints={constraintsRef}       
-        className={`mt-5 mb-5 borde tamaño  ${ (quitar) &&  className }`}
-        
+        className={`mt-5 mb-5 bordeSearch tamañoSearch  ${ (quitar) &&  className }`}
+        onAnimationEnd={  ()=> navigate('/')  } 
       >
         <div className="superior">
           <i className="fas fa-times equis "

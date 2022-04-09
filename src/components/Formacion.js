@@ -9,13 +9,13 @@ export const Formacion = () => {
 
   return (
     < >
-      <div className="row gx-5">
+      <div className="row gx-5 animate__animated animate__fadeIn">
       <Carousel />
         
         <div className="col me-5 ">
         <img
-              src={recursos(`./libros.png`)}
-              className="animate__animated animate__zoomIn animate__slower mt-5"
+              src={recursos(`./libros.webp`)}
+              className="img-fluid animate__animated animate__zoomIn animate__slower mt-5"
               alt="presentacion"
               />
         </div>

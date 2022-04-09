@@ -2,11 +2,12 @@
   "name": "web2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mikegomez1981.github.io/Web2",
+  "homepage": "http://mikegomez1981.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.26.1",
     "file-saver": "^2.0.5",
     "framer-motion": "^6.2.8",
     "query-string": "^7.1.1",
@@ -42,6 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-    
   }
 }
