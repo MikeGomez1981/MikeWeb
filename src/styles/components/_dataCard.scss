@@ -1,19 +1,30 @@
-.card{
+.miniatura{
     width: 25%;
     background-color: transparent;    
     border-radius: 0%;
-    
+    border: 1px solid rgba(0,0,0,.125);    
+}
+.marginApti{
+    margin: 0;
+    width: auto;
+}
+.cursor{
+    cursor:pointer;
+    position: relative;
+    z-index: 2;
 }
 .borde{
     border-color:$secondary;  
-    
+    z-index: 2;    
 }
-.card-img{
+.tamañoTexto{
+    font-size:  2vh ;
+}
+.tarjeta{
     border-radius: 0%;
     opacity: 80%;  
 }
 .card-text{
-    //text-shadow: 1px 0px 2px $secondary;
     background-color: transparent;
     white-space: nowrap;
     position:absolute;
@@ -26,13 +37,11 @@
 .informacion{
     width: 100%;
 }
-.card-body{
-    padding: 0;
-}
 .linea {
     color:$primary;
     opacity: 0%;    
     transition: opacity 1s;
+    
 }
 .linea:hover{
     background-color: $secondary;
@@ -47,6 +56,7 @@
 p{
     margin:0%;
 }
+
 
 
 

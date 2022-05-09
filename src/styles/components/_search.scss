@@ -1,23 +1,48 @@
+.total{
+    margin: 5%;    
+      
+}
 .bordeSearch{
     border-color:$secondary;
     border:1px solid;
-    overflow: visible;
-   
+    width: 90%;
+    height: auto;
+       
+}
+.superior{
+    border-bottom: 1px solid $secondary;
+    cursor: grab;
 }
 .Resultados{
-    color: $secondary;
-    text-align: left;
-    width:50%;
+    color: $secondary;   
 }
-.fondo{
+.puntuacion{
+    text-align: center;
+    width: 33em;
+}
+td{   
+    width: 33%;
+}
+.name{
+    text-align: left;
+    width: 33em;
+}
+.fondoSearch{
     background-color: $primary;
     color:$secondary;
 }
 .boton{
-    border: 2px solid $secondary;
+    border: 1px solid $secondary;
     background-color: $primary;
     color:$secondary;
     transition: linear ;
+    margin-left: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size:2vh;
+    width: auto;
+    height: auto;
+   
 }
 .boton:hover{
     border: 2px solid lighten($color: $primary, $amount: 10);
@@ -25,52 +50,57 @@
     color: $primary;
     transition: 0.6s;
 }
-.formulario{
-    background-color: $secondary;
-    border-radius:0%; 
-    opacity:15%;  
-    transition: 0.6s;
-}
-.formulario:hover{
-    opacity: 85%;  
-    transition: 0.6s;
-}
-.superior{
-    border-bottom: 1px solid $secondary;
-    cursor: grab;
-}
-.toast-body{
-    padding: 0rem;
-}
 .separado{
-    padding: 0.75rem;
+    padding: .60vh;
 }
 .equis{
    padding-left:0.50rem ;
    cursor:default;
 }
+.formulario{
+    background-color: $secondary;
+    border-radius:0%; 
+    opacity:15%;  
+    transition: 0.6s;
+    height: 4vh;
+    margin: 0 auto;
+    
+    
+}
+.formulario:hover{
+    opacity: 85%;  
+    transition: 0.6s;
+}
+
 .form-control{
     border: 1px solid $navbarColor;
-    //transition: box-shadow 2s linear;
+    width: 85%;
+    
+   
 }
 .form-control:focus{
     border-color: $secondary;   
     box-shadow: 0 0 0 3px $navbarColor;
-}
-.tamañoSearch{
-    width: 35%;
 }
 .alert-secondary{
     border-radius: 0%;
     color: $primary;
     background-color: $secondary;
     border-color: transparent;
+    width: 35vh;;
+    //float: right;
+    margin: 0 auto;
+
 }
 .alert-break{
     border-radius: 0%;
     color: $primary;
     background-color: $secondaryShadow;
     border-color: transparent;
+    width: 35vh;
+    margin: 0 auto;
+    //float: right;
+    
 }
 .animate__animated.animate__backOutRight{
     overflow: hidden;

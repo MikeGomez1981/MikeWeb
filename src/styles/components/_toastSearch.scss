@@ -1,0 +1,27 @@
+.toast{
+    //max-width: 70%;
+    width: 40vh;
+    background: #5a5a5a80;
+    margin-top: 15vh;
+    z-index: 2;
+    font-size: 1em;
+    position: absolute;
+    //margin: auto;    
+}
+.toast-body{
+    padding: .75rem;
+    //z-index: 2;
+}
+.search{
+    opacity: 1;
+}
+.tostaCentrada{
+    position: absolute;
+    top:50%;
+    left: 50%;           
+    margin-top: -20vh;
+    margin-left: -20vh;
+}
+.fondoDifu{
+    filter:blur(5px)
+ }

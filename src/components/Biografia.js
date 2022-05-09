@@ -4,7 +4,6 @@ import bio1 from '../exports/bio/bio1.txt';
 import bio2 from '../exports/bio/bio2.txt';
 import {Carousel}  from './carrusel/Carousel';
 
-
 export const Biografia = () => {
 
   const [raw, setRaw] = useState('');
@@ -22,32 +21,62 @@ export const Biografia = () => {
     fetch(bio2)
       .then(r => r.text())
       .then(text =>{setRaw2(text)} );
+      return () =>{
+        console.error('error')
+      }
+  }, []);
+
+  const [over, setOver] = useState(false);
+  const [over1, setOver1] = useState(false);
+  const [over2, setOver2] = useState(false);
+
   
    
-  }, [])
-  
 return (
-    < div>
-        
-      <Carousel />
+  <>   
+    <Carousel />
        
-      <div className="animate__animated animate__backInUp">   
-        <h1 className="mt-5 ">Sobre mi</h1>
-          <p
-            className="lh-lg mt-5 centrado"
-            >{raw}</p> 
-        <h1 className="mt-5">Objetivos</h1>
-          <p
-            className="lh-lg mt-5 centrado"
-            >{raw1}</p>
-        <h1 className="mt-5">Qué puedo aportar</h1>
-          <p
-            className="lh-lg mt-5 centrado"
-            >{raw2}</p> 
-      </div>
+      <div className="d-flex justify-content-center container-fluid ">
+        <div className="animate__animated animate__backInUp">  
+          <div className="card-group">
+            <div className="card fondo ms-4 me-4 mt-5 mb-5"> 
+              <div className="card-body ">
+                <h5 className="card-title mt-4 ms-4">Sobre mi</h5>
+                <p className={`lh-lg mt-5 center overflow ${(over)&& 'overScroll' } `}>{raw}</p>
+                <button 
+                     className="botonNoStyle "
+                    onClick={()=>{(over===false)?setOver(true):setOver(false)}}
+                    href="#"
+                    >Ver más...</button>
+              </div>
+            </div>
             
-        
+            <div className="card fondo ms-4 me-4 mt-5 mb-5"> 
+              <div className="card-body radiusBio">
+                <h5 className="card-title mt-4 ms-4">Objetivos</h5>
+                 <p className={`lh-lg mt-5 center overflow ${(over1)&& 'overScroll' } `}>{raw1}</p>
+                <button 
+                    className="botonNoStyle"
+                    onClick={()=>{(over1===false)?setOver1(true):setOver1(false)}}
+                    href="#"
+                    >Ver más...</button>
+              </div>
+            </div>
+
+            <div className="card fondo ms-4 me-4 mt-5 mb-5"> 
+              <div className="card-body ">
+                <h5 className="card-title mt-4 ms-4">Qué puedo aportar</h5>
+                <p className={`lh-lg mt-5 center overflow ${(over2)&& 'overScroll' } `}>{raw2}</p>
+                <button 
+                    className="botonNoStyle"
+                    onClick={()=>{(over2===false)?setOver2(true):setOver2(false)}}
+                    href="#"
+                    >Ver más...</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>  
-  
-    );
+  </>
+  );
 };

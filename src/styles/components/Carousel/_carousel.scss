@@ -1,18 +1,22 @@
 .CarouselButtonIzq {
-    width: 40px;
-    height: 40px;
     color: #212529;
     background-color: #ECF0F1;
     border: #212529;   
-    margin: 0 1%;
     border-radius: 100% 0% 0% 100% / 50% 0% 0% 50%;
-}
-.CarouselButtonDer {
-    width: 40px;
+    margin:0 40%;
     height: 40px;
+    width: 40px;
+    position: relative;
+}
+
+.CarouselButtonDer {
     color: #212529;
     background-color: #ECF0F1;
     border: #212529;   
-    margin: 0 1%;
     border-radius: 0% 100% 100% 0% / 0% 50% 50% 0%;
+    margin:0 40%;
+    height: 40px;
+    width: 40px;
+    position: relative;
+
 }
